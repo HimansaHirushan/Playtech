@@ -52,14 +52,14 @@ nav a:hover {
   padding: 20px;
 }
 
-.container[name="main-introduction"] {
+.container[id="main-introduction"]  {
   position: relative; /* Ensures the ::after pseudo-element is positioned relative to this container */
   background-image: url("./images/Home page/website1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container[name="main-introduction"]::after {
+.container[id="main-introduction"] ::after {
   content: ""; /* Necessary to create the pseudo-element */
   position: absolute;
   top: 0;
@@ -71,7 +71,7 @@ nav a:hover {
   z-index: 1; /* Places it above the background image but below inner content */
 }
 
-.container[name="main-introduction"] > * {
+.container[id="main-introduction"]  > * {
   position: relative;
   z-index: 2; /* Ensures inner content is above the pseudo-element */
 }
@@ -230,12 +230,12 @@ nav a {
   padding: 15px;
 }
 
-.container[name="main-introduction"] {
+.container[id="main-introduction"]  {
   background-size: contain; /* Adjust image scaling */
   background-position: center;
 }
 
-.container[name="main-introduction"] > * {
+.container[id="main-introduction"]  > * {
   text-align: center;
 }
 
