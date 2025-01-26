@@ -59,7 +59,7 @@ nav a:hover {
   background-size: cover;
 }
 
-.container[id="main-introduction"] ::after {
+#main-introduction::after {
   content: ""; /* Necessary to create the pseudo-element */
   position: absolute;
   top: 0;
@@ -71,7 +71,7 @@ nav a:hover {
   z-index: 1; /* Places it above the background image but below inner content */
 }
 
-.container[id="main-introduction"]  > * {
+#main-introduction   > * {
   position: relative;
   z-index: 2; /* Ensures inner content is above the pseudo-element */
 }
@@ -230,12 +230,12 @@ nav a {
   padding: 15px;
 }
 
-.container[id="main-introduction"]  {
+#main-introduction  {
   background-size: contain; /* Adjust image scaling */
   background-position: center;
 }
 
-.container[id="main-introduction"]  > * {
+#main-introduction   > * {
   text-align: center;
 }
 
