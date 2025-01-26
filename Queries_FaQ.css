@@ -1,0 +1,426 @@
+
+ /* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color:white;
+}
+
+header p {
+  font-size: 1.2em;
+  color:white
+}
+
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  
+}
+
+
+
+.faq-section {
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item > p {
+  text-align: left;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.faq-answer {
+  margin-top: 5px;
+  color: #34495e;
+}
+
+.query-form {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #3498db;
+  /* color: #fff; */
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 40px 20px; /* Spacing */
+  font-family: Arial, sans-serif;
+  padding-left: 100px;
+  
+  
+  
+}
+
+.footer .container {
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the content */
+  background-color: #333;
+}
+
+.footer .row {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Wrap rows on smaller screens */
+  justify-content: space-between; /* Space between columns */
+}
+
+.footer-col {
+  flex: 1; /* Each column takes equal space */
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px 20px; /* Space around columns */
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase titles */
+  border-bottom: 2px solid #fff; /* Underline for title */
+  display: inline-block; /* Inline block for underline effect */
+}
+
+.footer-col ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+ 
+}
+
+
+
+.footer .Copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Light gray color for copyright */
+}
+
+
+/* Additional Utility Classes */
+p {
+  color: #555;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/*Responsive Design*/
+@media(max-width:768px){/* General Reset */ 
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    color: white;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #00aaff;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .faq-section {
+    margin-bottom: 40px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-item > p {
+    text-align: left;
+  }
+  
+  .faq-question {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .faq-answer {
+    margin-top: 5px;
+    color: #34495e;
+  }
+  
+  .query-form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #3498db;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #333;
+  }
+  
+  .footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-col {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px 20px;
+  }
+  
+  .footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .Copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  /* Additional Utility Classes */
+  p {
+    color: #555;
+    text-align: center;
+    margin: 0 0 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    header p {
+      font-size: 1em;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin: 5px 0;
+    }
+  
+    .container {
+      padding: 15px;
+    }
+  
+    .footer .row {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-col {
+      margin: 10px 0;
+    }
+  }
+  
+
+
+
+}

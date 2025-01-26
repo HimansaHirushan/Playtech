@@ -1,0 +1,330 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  color:white
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* Main Container */
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container[name="main-introduction"] {
+  position: relative; /* Ensures the ::after pseudo-element is positioned relative to this container */
+  background-image: url("../html assignment/images/Home page/website1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container[name="main-introduction"]::after {
+  content: ""; /* Necessary to create the pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95); /* Adjust the alpha value (0.5) to control the darkness */
+  pointer-events: none; /* Ensures the pseudo-element doesn't block interactions with inner content */
+  z-index: 1; /* Places it above the background image but below inner content */
+}
+
+.container[name="main-introduction"] > * {
+  position: relative;
+  z-index: 2; /* Ensures inner content is above the pseudo-element */
+}
+
+
+
+
+
+
+
+/* Section Styling */
+section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Button Styling */
+.button {
+  display: block;
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 40px 20px; /* Spacing */
+  font-family: Arial, sans-serif;
+  padding-left: 100px;
+  
+  
+  
+}
+
+.footer .container {
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer .row {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Wrap rows on smaller screens */
+  justify-content: space-between; /* Space between columns */
+}
+
+.footer-col {
+  flex: 1; /* Each column takes equal space */
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px 20px; /* Space around columns */
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase titles */
+  border-bottom: 2px solid #fff; /* Underline for title */
+  display: inline-block; /* Inline block for underline effect */
+}
+
+.footer-col ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+ 
+}
+
+
+
+.footer .Copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa; /* Light gray color for copyright */
+}
+
+/* Additional Utility Classes */
+p {
+  color: #555;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/*Responsive Design*/
+@media(max-width:768px){/*Responsive Design*/
+  /* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 0;
+}
+
+header h1 {
+  font-size: 1.8em;
+}
+
+header p {
+  font-size: 1em;
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  font-size: 12px;
+  margin: 5px;
+}
+
+/* Main Container */
+.container {
+  max-width: 100%;
+  padding: 15px;
+}
+
+.container[name="main-introduction"] {
+  background-size: contain; /* Adjust image scaling */
+  background-position: center;
+}
+
+.container[name="main-introduction"] > * {
+  text-align: center;
+}
+
+/* Section Styling */
+.section-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.button {
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.footer .row {
+  flex-direction: column; /* Stack items vertically */
+}
+
+.footer-col {
+  margin-bottom: 20px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+}
+
+.footer-col ul li {
+  font-size: 14px;
+}
+
+.footer .Copyright {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+/* Mobile-Specific Styles */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  nav a {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-col ul li {
+    font-size: 12px;
+  }
+
+  .footer .Copyright {
+    font-size: 12px;
+  }
+}
+
+
+
+
+}

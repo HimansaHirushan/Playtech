@@ -1,0 +1,149 @@
+/* Header Styling */
+header {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+ 
+}
+
+
+header p {
+  font-size: 1.2em;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.consoles{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.console-info{
+  padding: 20px;
+}
+
+.container-1 img{
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  
+}
+
+.container-1{
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-1:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.console-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 10px;
+}
+
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #444;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+/* Footer Styles */
+.footer {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 40px 20px; /* Spacing */
+  font-family: Arial, sans-serif;
+  padding-left: 100px;
+  
+  
+  
+}
+
+.footer .container {
+  max-width: 1200px; /* Limit the width */
+  margin: 0 auto; /* Center the content */
+}
+
+.footer .row {
+  display: flex; /* Flexbox for layout */
+  flex-wrap: wrap; /* Wrap rows on smaller screens */
+  justify-content: space-between; /* Space between columns */
+}
+
+.footer-col {
+  flex: 1; /* Each column takes equal space */
+  min-width: 200px; /* Minimum width for columns */
+  margin: 10px 20px; /* Space around columns */
+}
+
+.footer-col h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase titles */
+  border-bottom: 2px solid #fff; /* Underline for title */
+  display: inline-block; /* Inline block for underline effect */
+}
+
+.footer-col ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
+ 
+}
+
+@media screen and (max-width: 568px){
+  nav {
+    overflow: scroll;
+  }
+}
