@@ -54,7 +54,7 @@ nav a:hover {
 
 .container[name="main-introduction"] {
   position: relative; /* Ensures the ::after pseudo-element is positioned relative to this container */
-  background-image: url("../html assignment/images/Home page/website1.jpg");
+  background-image: url("./images/Home page/website1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
