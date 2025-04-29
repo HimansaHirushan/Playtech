@@ -1,0 +1,165 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f1c;
+  color: #fff;
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+/* Header */
+header {
+  padding: 20px 30px;
+  background-color: #111;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+/* Container */
+.cart-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #4b3b6f;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Section Titles */
+.cart-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+thead {
+  background-color: #add8ff;
+  color: #000;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #888;
+  text-align: center;
+}
+
+td img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Total Price */
+.total {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: right;
+  margin-top: -15px;
+  margin-bottom: 30px;
+  color: #ffd700;
+}
+
+/* Form Section */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #3a2d53;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form label {
+  font-weight: bold;
+  font-size: 1em;
+  color: #ffffff;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Submit Button */
+button[type="submit"] {
+  background-color: #21c945;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1aaf3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 25px 20px;
+  }
+
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .total {
+    font-size: 1em;
+  }
+
+  form label {
+    font-size: 0.95em;
+  }
+
+  form input {
+    font-size: 0.95em;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

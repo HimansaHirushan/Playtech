@@ -1,0 +1,105 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0f0f1c;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: white;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2em;
+}
+
+header p {
+  margin-top: 5px;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+/* Main Container */
+.thankyou-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box {
+  background-color: #4b3b6f;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.message-box h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #21c945;
+}
+
+.message-box p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #eee;
+}
+
+.message-box .delivery {
+  font-size: 1em;
+  margin-top: 20px;
+  color: #ffd700;
+}
+
+/* Button */
+.home-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #21c945;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #1aaf3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message-box {
+    padding: 25px;
+  }
+
+  .message-box h2 {
+    font-size: 1.6em;
+  }
+
+  .message-box p {
+    font-size: 1em;
+  }
+
+  .home-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}

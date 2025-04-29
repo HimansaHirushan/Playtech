@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - PlayTech</title>
+  <link rel="stylesheet" href="Checkout.css" >
+  <script defer src="checkout.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>PlayTech</h1>
+    <p>Complete Your Purchase</p>
+  </header>
+
+  <div class="cart-container">
+    <h2>Order Summary</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="checkout-items">
+        <!-- JS will populate this -->
+      </tbody>
+    </table>
+    <p id="checkout-total" class="total">Total: Rs. 0</p>
+
+    <h2>Customer Details</h2>
+    <form id="checkout-form">
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" required><br><br>
+
+      <label for="address">Shipping Address:</label><br>
+      <input type="text" id="address" required><br><br>
+
+      <label for="card">Card Number:</label><br>
+      <input type="text" id="card" required><br><br>
+
+      <button type="submit">Confirm Purchase</button>
+    </form>
+  </div>
+
+</body>
+</html>

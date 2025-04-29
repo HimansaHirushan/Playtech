@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - City Games</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+  <div class="cart-container">
+    <h2>Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Unit Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- JS will populate this -->
+      </tbody>
+    </table>
+    <p id="total" class="total">Total: Rs. 0</p>
+
+    <div class="cart-buttons">
+      
+      <button id="checkoutBtn">Proceed to Checkout</button>
+      <button id="addFavBtn">Add to Favourites</button>
+      <button id="applyFavBtn">Apply Favourites</button>
+      <button id="clearBtn">Clear Cart</button>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+</body>
+</html>
